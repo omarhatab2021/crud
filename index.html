@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- start IE combability meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- start viewport mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- start a  title of project-->
+    <title>to do list</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- start FontAwosome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- start bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- start normalization -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- start css source -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- start script -->
+    <script></script>
+    <!-- end script -->
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- main todo-container -->
+  <div class="todo-container">
+    <!-- to add new task -->
+    <div class="add-task">
+      <input type='text'>
+      <span class="plus">+</span>
+    </div>
+    <div class="tasks-content">
+      <span class="no-tasks-message">no tasks to show</span>
+      
+    </div>
+  </div>
+  <div class="tasks-status">
+    <div class="task-count">
+      tasks <span>0</span>
+    </div>
+    <button class="btn btn-danger" id ="delAll">Delete All</button>
+    <button class="btn btn-success" id = "FinshAll">Finsh All</button>
+    <div class="tasks-completed">
+      completed <span>0</span>
+    </div>
+  </div>
+  <div class="alert alert-danger splash-screen" role="alert">
+    no tasks is created try again !!
+  </div>
+  <div class="splash-edit">
+    <div class="inside-edit">
+      <h4>Can Edit Your Task</h4>
+      <div class="contentEditor p-2 text-center">
+        <span><i class="fas fa-tools"></i></span>
+        <input type="text" class="form-control editNow"style="font-size: 20px;">
+        <button class="btn btn-primary px-4 py-2 my-5" id = "ok">OK</button>
+        <button class="btn btn-danger px-3 py-2 my-5"  id="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/myJava.js"></script>
+  </body>
+</html>
